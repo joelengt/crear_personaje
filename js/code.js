@@ -88,7 +88,7 @@ function Btn_send(){
 	close.innerHTML= "X";
 	close.style.float= "right";
 	close.style.cursor= "pointer";
-	close.style.fontSize = "30px"
+	close.style.fontSize = "32px"
 	close.classList.add("close_this");
 	div.appendChild(close);
 
