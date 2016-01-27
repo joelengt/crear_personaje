@@ -35,6 +35,7 @@ $("form").addEventListener("keypress", function (event){
 	}
 	// console.log(event.keyCode);
 });
+
 function Btn_send(){
 	if(txt_name.value === "" || txt_imagen.value === "" || txt_data_sexo.value === "" || txt_data_genero.value === "" || txt_data_serie.value === ""){
 		// alert("Necesitas llenar los campos");
@@ -87,14 +88,13 @@ function Btn_send(){
 	close.innerHTML= "X";
 	close.style.float= "right";
 	close.style.cursor= "pointer";
+	close.style.fontSize = "30px"
 	close.classList.add("close_this");
 	div.appendChild(close);
 
 	div.appendChild(h2);
 	div.appendChild(imagen);
 	div.appendChild(p);
-
-
 
 	$('body').insertBefore(div, $('.box-article'));
 
